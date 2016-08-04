@@ -1,8 +1,7 @@
 # gettingandcleaningdataproject
 Final project for Getting and Cleaning Data on Coursera.org
 
-This Readme walks through each step within the run_analysis.R code
-Before running the R script, you must ensure that it is contained within the parent folder that also contains the Samsung phone sensor data
+This Readme walks through each step within the run_analysis.R code.  Before running the R script, you must ensure that it is contained within the parent folder that also contains the Samsung phone sensor data
 
 ##load the dplyr package to utilize some of it's functions
 library(dplyr)
