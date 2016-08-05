@@ -56,8 +56,11 @@ library(dplyr)
   
 ##produced combined data set
   ##bind all rows for the test and training data together
-  combined_data <- bind_rows(test_set, train_set)
+  combined_data <- rbind(test_set, train_set)
 
+##subset combined_data to contain the subject, label, and only mean and std variables
+  subset_combined <- combined_data[,c("subject","label",grep("mean|std", names(combined_data), value = TRUE))]
+  
 ##write the combined_data to a .txt file
-  write.table(combined_data, "tidy_data_set.txt", row.names = FALSE)
+  write.table(subset_combined, "tidy_data_set.txt", row.names = FALSE)
   
