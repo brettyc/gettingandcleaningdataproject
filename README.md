@@ -19,6 +19,7 @@ library(dplyr)
 ##load the test and training data
   ##load the test data set
   test_set <- read.table("./test/X_test.txt")
+  
   ##name the variables with feature names
   names(test_set) <- feature_names
   
@@ -27,6 +28,7 @@ library(dplyr)
   
   ##load the training data set
   train_set <- read.table("./train/X_train.txt")
+  
   ##name the variables with feature names
   names(train_set) <- feature_names
   
