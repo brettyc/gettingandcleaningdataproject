@@ -64,6 +64,6 @@ library(dplyr)
 ##cast the data to get the average for each variable for each activity and each subject
   data_cast <- cast(data_melt, subject + activity ~ variable, mean)
 
-##write the combined_data to a .txt file
+##write the data_cast to a .txt file
   write.table(data_cast, "tidy_data_set.txt", row.names = FALSE)
   
