@@ -23,16 +23,16 @@ library(dplyr)
   ##name the variables with feature names
   names(test_set) <- feature_names
   
-  ##load the test labels and apply the column name 'label_id'
+  ##load the test activity labels and apply the column name 'label_id'
   test_labels <- read.table("./test/y_test.txt", col.names = c("activity_id"))
   
   ##load the training data set
   train_set <- read.table("./train/X_train.txt")
   
-  ##name the variables with feature names
+  ##rename the variables with feature names
   names(train_set) <- feature_names
   
-  ##load the training labels and apply the column name 'activity_id'
+  ##load the training activity labels and apply the column name 'activity_id'
   train_labels <- read.table("./train/y_train.txt", col.names = c("activity_id"))
 
 ##add the activity lable names to test_labels and also train_labels
